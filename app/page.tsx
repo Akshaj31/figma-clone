@@ -1,10 +1,19 @@
+"use client"
+
 import { Room } from "./Room";
 import { CollaborativeApp } from "./CollaborativeApp";
+import Live from "@/components/Live";
+import Navbar from "@/components/Navbar";
 
 export default function Page() {
   return (
-    <Room>
-      <h1 className="text-5xl text-white">LiveBlocks Figma Clone</h1>
-    </Room>
+    <main className="h-screen overflow-hidden">
+      <Navbar />
+      
+      <section className="flex h-full flex-row">
+        <Live/>
+
+      </section>
+    </main>
   );
 }
